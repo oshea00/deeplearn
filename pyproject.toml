@@ -17,6 +17,6 @@ dependencies = [
     "stable-baselines3==2.3.2",
     "tensorboard==2.18.0",
     "torch==2.5.0",
-    "torchrl==0.6.0",
+    "torchrl==0.10.0",
     "torchvision==0.20.0",
 ]
