@@ -3,8 +3,11 @@ import gymnasium as gym
 
 if __name__ == "__main__":
     env = gym.make("CartPole-v1", render_mode="rgb_array")
-    env = gym.wrappers.HumanRendering(env)
-    # env = gym.wrappers.RecordVideo(env, video_folder="video")
+    #    env = gym.wrappers.HumanRendering(env)
+    env = gym.wrappers.RecordVideo(
+        env,
+        video_folder="video",
+    )
 
     total_reward = 0.0
     total_steps = 0
